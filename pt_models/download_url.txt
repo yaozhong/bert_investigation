@@ -1,3 +1,5 @@
 5mer pre-trained on randomly generated sequences:
 https://drive.google.com/file/d/1a2OjubusbsXkC2xAp8W0BbVZHuqyCAhk/view?usp=share_link
 
+4mer pre-trained on randomly generated sequences:
+https://drive.google.com/file/d/1YKKoX_8NRrPR13uGdEQAKWqxBcOvq2su/view?usp=share_link
