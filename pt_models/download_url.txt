@@ -3,3 +3,6 @@ https://drive.google.com/file/d/1a2OjubusbsXkC2xAp8W0BbVZHuqyCAhk/view?usp=share
 
 4mer pre-trained on randomly generated sequences:
 https://drive.google.com/file/d/1YKKoX_8NRrPR13uGdEQAKWqxBcOvq2su/view?usp=share_link
+
+6mer pre-trained on radomly generated sequences:
+https://drive.google.com/file/d/1-6XMO70jY9Tdj9R19vgq8u9DtCzDGPkm/view?usp=share_link
