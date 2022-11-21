@@ -1,2 +1,2 @@
 # bert_investigation
-BERT analysis
+Dysfunctional analysis of BERT on nucleotide sequences
