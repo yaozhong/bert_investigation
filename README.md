@@ -41,7 +41,7 @@ LR=1e-4
 EPOCH=20
 BS=64
 
-CODE="ft_task/TATA/tata_train.py"
+CODE="ft_tasks/TATA/tata_train.py"
 python $CODE --kmer $KMER --cnn_kernel_size $KERNEL --model $MODEL --model_dir $MODEL_SAVE_PATH \
     --data_dir $DATA_PATH  --embedding $EMBEDDING \
     --lr $LR --epoch $EPOCH --batch_size $BS --device "cuda:0"
@@ -60,7 +60,7 @@ LR=0.001
 EPOCH=10
 BS=64
 
-CODE="ft_task/TFBS/TBFS_all_run.py"
+CODE="ft_tasks/TFBS/TBFS_all_run.py"
 python $CODE --kmer $KMER --cnn_kernel_size $KERNEL --model $MODEL --model_dir $MODEL_SAVE_PATH \
 	--data_dir $DATA_PATH --embedding $EMBEDDING --embedding_file $embed_file \
 	--lr $LR --epoch $EPOCH --batch_size $BS --device "cuda:0" 
