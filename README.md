@@ -3,7 +3,7 @@
 In this study, we focused on nucleotide sequences and illustrated the learning outcomes of a typical BERT model learned through pre-training.
 We used a non-standard pre-training approach to scrutinize different modules by incorporating randomness at both the data and model levels.
 
-![](figures/nonstandard_pretrain.eps)
+![](figures/nonstandard_pretrain.png)
 
 
 
