@@ -63,5 +63,14 @@ python $CODE --kmer $KMER --cnn_kernel_size $KERNEL --model $MODEL --model_dir $
 ## Pre-trained models
 * **pt_models**:  download link of the pre-trained model using random data.
 
+* 4mer pre-trained on randomly generated sequences:
+https://drive.google.com/file/d/1YKKoX_8NRrPR13uGdEQAKWqxBcOvq2su/view?usp=share_link
+
+* 5mer pre-trained on randomly generated sequences:
+https://drive.google.com/file/d/1a2OjubusbsXkC2xAp8W0BbVZHuqyCAhk/view?usp=share_link
+
+* 6mer pre-trained on radomly generated sequences:
+https://drive.google.com/file/d/1-6XMO70jY9Tdj9R19vgq8u9DtCzDGPkm/view?usp=share_link
+
 ## Experiment results
 * **results**: detailed results of each dataset of TBFS tasks.
