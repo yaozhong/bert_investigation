@@ -18,6 +18,14 @@ Please use the paper provided URL for the download.
 ## Source code
 * **ft_tasks**: source code of using different k-mer embeddings in downstream tasks of TATA prediciton and TBFS prediction.
 
+### Enviroments and required packages
+
+- python 3
+- Pytorch 1.11 
+- ![DNABERT](https://github.com/jerryji1993/DNABERT) 
+- ![dna2vec](https://github.com/pnpnpn/dna2vec)
+
+
 ### TATA
 ```
 KMER=5
