@@ -31,11 +31,11 @@ Please use the paper provided URL for the download.
 KMER=5
 SPIECE= "human" or "mouse"
 MODEL="deepPromoterNet"
-MODEL_SAVE_PATH=""
+MODEL_SAVE_PATH="model/"
 DATA_PATH="ftData/TATA/TATA_${SPIECE}/overall"
 EMBEDDING="dnabert"
 DTYPE="random"
-embed_file="path to the k-mer pre-trained on randomly generated sequences"
+embed_file="file path of the k-mer pre-trained on randomly generated sequences"
 KERNEL="5,5,5"
 LR=1e-4
 EPOCH=20
@@ -52,10 +52,10 @@ python $CODE --kmer $KMER --cnn_kernel_size $KERNEL --model $MODEL --model_dir $
 KMER=5
 MODEL="zeng_CNN"
 KERNEL="24" 
-MODEL_SAVE_PATH=""
+MODEL_SAVE_PATH="model/"
 DATA_PATH="TBFS/motif_discovery/" or "TBFS/motif_occupancy/"
 EMBEDDING="dnabert"
-embed_file="path to the k-mer pre-trained on randomly generated sequences"
+embed_file="file path of the k-mer pre-trained on randomly generated sequences"
 LR=0.001
 EPOCH=10
 BS=64
