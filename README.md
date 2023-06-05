@@ -11,12 +11,13 @@ We used a non-standard pre-training approach to scrutinize different modules by 
 ### Pre-training data
 * **data/ptData**: source code of generate random sequences.
 ### Fine-tuning data
-* **TATA**: human and mouse dataset are in ftData/TATA
-* **TFBS**: the same datasets of motif_discovery(690) and motif_occupancy (422) provided by Zeng et al. (https://academic.oup.com/bioinformatics/article/32/12/i121/2240609)
+* **TATA**: human and mouse dataset are in the fold of **data/ftData/TATA**
+* **TFBS**: motif_discovery(690) and motif_occupancy (422) provided by Zeng et al. (https://academic.oup.com/bioinformatics/article/32/12/i121/2240609).
+Please use the paper provided URL for the download.
 
 
 ## Source code
-* **ft_tasks**: source code of using different k-mer embeddings in the downstream tasks of TATA prediciton and TBFS prediction.
+* **ft_tasks**: source code of using different k-mer embeddings in downstream tasks of TATA prediciton and TBFS prediction.
 
 ### TATA
 ```
