@@ -22,8 +22,8 @@ Please use the paper provided URL for the download.
 
 - python 3
 - Pytorch 1.11 
-- ![DNABERT](https://github.com/jerryji1993/DNABERT) 
-- ![dna2vec](https://github.com/pnpnpn/dna2vec)
+- [DNABERT](https://github.com/jerryji1993/DNABERT) 
+- [dna2vec](https://github.com/pnpnpn/dna2vec)
 
 
 ### TATA
