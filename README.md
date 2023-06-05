@@ -11,8 +11,8 @@ We used a non-standard pre-training approach to scrutinize different modules by 
 ### Pre-training data
 * **data/ptData**: source code of generate random sequences.
 ### Fine-tuning data
-* **TATA**: data/ftData/TATA
-* **TFBS**: the same dataset used in the paper by Zeng et al. (https://academic.oup.com/bioinformatics/article/32/12/i121/2240609)
+* **TATA**: human and mouse dataset are in ftData/TATA
+* **TFBS**: the same datasets of motif_discovery(690) and motif_occupancy (422) provided by Zeng et al. (https://academic.oup.com/bioinformatics/article/32/12/i121/2240609)
 
 
 ## Source code
@@ -21,7 +21,7 @@ We used a non-standard pre-training approach to scrutinize different modules by 
 ### TATA
 ```
 KMER=5
-SPIECE="mouse" or "human"
+SPIECE= "human" or "mouse"
 MODEL="deepPromoterNet"
 MODEL_SAVE_PATH=""
 DATA_PATH="ftData/TATA/TATA_${SPIECE}/overall"
@@ -34,7 +34,6 @@ EPOCH=20
 BS=64
 
 CODE="ft_task/TATA/tata_train.py"
-
 python $CODE --kmer $KMER --cnn_kernel_size $KERNEL --model $MODEL --model_dir $MODEL_SAVE_PATH \
     --data_dir $DATA_PATH  --embedding $EMBEDDING \
     --lr $LR --epoch $EPOCH --batch_size $BS --device "cuda:0"
@@ -54,7 +53,6 @@ EPOCH=10
 BS=64
 
 CODE="ft_task/TFBS/TBFS_all_run.py"
-
 python $CODE --kmer $KMER --cnn_kernel_size $KERNEL --model $MODEL --model_dir $MODEL_SAVE_PATH \
 	--data_dir $DATA_PATH --embedding $EMBEDDING --embedding_file $embed_file \
 	--lr $LR --epoch $EPOCH --batch_size $BS --device "cuda:0" 
