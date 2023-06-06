@@ -26,7 +26,7 @@ Please use the paper provided URL for the download.
 - [dna2vec](https://github.com/pnpnpn/dna2vec)
 
 
-### Evaluated k-mers
+### Evaluated k-mer embeddings
 | k-mer embedding     | Description   | required files | 
 | ------------- | ------------- |----------------|
 | dnabert       | k-mer embedding from DNABERT pre-trained on hg38  | [pre-trained model provided by DNABERT](https://drive.google.com/file/d/1KMqgXYCzrrYD1qxdyNWnmUYPtrhQqRBM/view) |
