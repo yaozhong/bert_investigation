@@ -43,7 +43,7 @@ MODEL="deepPromoterNet"
 MODEL_SAVE_PATH="model/"
 DATA_PATH="ftData/TATA/TATA_${SPIECE}/overall"
 EMBEDDING="dnabert" (or "onehot", "dna2vec")
-embed_file=FOLD_PATH_OF_THE_PRETRAINED_MODEL
+embed_file=FOLD_PATH_OF_THE_PRETRAINED_MODEL (or NONE)
 KERNEL="5,5,5"
 LR=1e-4
 EPOCH=20
@@ -52,7 +52,7 @@ DROPOUT=0.1
 
 CODE="ft_tasks/TATA/tata_train.py"
 python $CODE --kmer $KMER --cnn_kernel_size $KERNEL --model $MODEL --model_dir $MODEL_SAVE_PATH \
-    --data_dir $DATA_PATH  --embedding $EMBEDDING \
+    --data_dir $DATA_PATH  --embedding $EMBEDDING --embedding_file $embed_file \
     --lr $LR --epoch $EPOCH --batch_size $BS --dropout $DROPOUT --device "cuda:0"
 ```
 
@@ -64,7 +64,7 @@ KERNEL="24"
 MODEL_SAVE_PATH="model/"
 DATA_PATH="TBFS/motif_discovery/" or "TBFS/motif_occupancy/"
 EMBEDDING="dnabert" (or "onehot", "dna2vec")
-embed_file=FOLD_PATH_OF_THE_PRETRAINED_MODEL
+embed_file=FOLD_PATH_OF_THE_PRETRAINED_MODEL (or NONE)
 LR=0.001
 EPOCH=10
 BS=64
