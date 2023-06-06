@@ -1,6 +1,6 @@
 # Investigation of the BERT model on nucleotide sequences with non-standard pre-training and the evaluation of different k-mer embeddings
 
-In this study, We used a non-standard pre-training approach to investigate a BERT model pre-trained on nucleotide sequences. 
+In this study, we used a non-standard pre-training approach through incorporating randomness at the data and model level to investigate a BERT model pre-trained on nucleotide sequences. 
 
 ![](figures/nonstandard_pretrain.png)
 
@@ -35,16 +35,15 @@ Please use the paper provided URL for the download.
 | dna2vec       | k-mer embedding from dna2vec | [pretrained model](https://github.com/pnpnpn/dna2vec/blob/master/pretrained/dna2vec-20161219-0153-k3to8-100d-10c-29320Mbp-sliding-Xat.w2v) |
 
 
-### TATA
+### TATA prediction task
 ```
 KMER=5
-SPIECE= "human" or "mouse"
+SPIECE= "human" (or "mouse")
 MODEL="deepPromoterNet"
 MODEL_SAVE_PATH="model/"
 DATA_PATH="ftData/TATA/TATA_${SPIECE}/overall"
-EMBEDDING="dnabert"
-DTYPE="random"
-embed_file="file path of the k-mer pre-trained on randomly generated sequences"
+EMBEDDING="dnabert" (or "onehot", "dna2vec")
+embed_file=FOLD_PATH_OF_THE_PRETRAINED_MODEL
 KERNEL="5,5,5"
 LR=1e-4
 EPOCH=20
@@ -57,15 +56,15 @@ python $CODE --kmer $KMER --cnn_kernel_size $KERNEL --model $MODEL --model_dir $
     --lr $LR --epoch $EPOCH --batch_size $BS --dropout $DROPOUT --device "cuda:0"
 ```
 
-### TFBS
+### TFBS prediction task
 ```
 KMER=5
 MODEL="zeng_CNN"
 KERNEL="24" 
 MODEL_SAVE_PATH="model/"
 DATA_PATH="TBFS/motif_discovery/" or "TBFS/motif_occupancy/"
-EMBEDDING="dnabert"
-embed_file="file path of the k-mer pre-trained on randomly generated sequences"
+EMBEDDING="dnabert" (or "onehot", "dna2vec")
+embed_file=FOLD_PATH_OF_THE_PRETRAINED_MODEL
 LR=0.001
 EPOCH=10
 BS=64
