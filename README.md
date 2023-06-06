@@ -26,6 +26,14 @@ Please use the paper provided URL for the download.
 - [dna2vec](https://github.com/pnpnpn/dna2vec)
 
 
+### Evaluated k-mers
+| k-mer         | Description   | required files |
+| ------------- | ------------- |----------------|
+| dnabert       | k-mer embedding from DNABERT  | [pretrained model provided by DNABERT](https://drive.google.com/file/d/1KMqgXYCzrrYD1qxdyNWnmUYPtrhQqRBM/view) |
+| dnabert       | k-mer embedding from DNABERT pretrained on random data  | [random data pretrained DNABERT model](pt_models/download_url.txt) |
+| onehot        | one-hot embedding  | None |
+| dna2vec       | k-mer embedding from dna2vec | [pretrained model](https://github.com/pnpnpn/dna2vec/blob/master/pretrained/dna2vec-20161219-0153-k3to8-100d-10c-29320Mbp-sliding-Xat.w2v) |
+| ------------- | ------------- |----------------|
 ### TATA
 ```
 KMER=5
