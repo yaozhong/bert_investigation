@@ -1,4 +1,4 @@
-# Investigation of the BERT model on nucleotide sequences with non-standard pre-training and the evaluation of different k-mer embeddings
+# Investigation of the BERT model on nucleotide sequences with non-standard pre-training and evaluation of different k-mer embeddings
 
 In this study, we used a non-standard pre-training approach through incorporating randomness at the data and model level to investigate a BERT model pre-trained on nucleotide sequences. 
 
